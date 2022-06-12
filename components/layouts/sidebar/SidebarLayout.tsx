@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './SidebarLayout.module.scss';
+import styles from './SidebarLayout.module.css';
 
 export interface ISidebarLayout {}
 

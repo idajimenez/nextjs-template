@@ -1,18 +1,19 @@
 module.exports = {
-    stories: ['../**/*.stories.mdx','../**/*.stories.@(js|jsx|ts|tsx)'],
+    stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
     staticDirs: ['../public'],
     addons: [
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         '@storybook/addon-interactions',
+        '@storybook/preset-scss',
         {
-            name: 'storybook-addon-sass-postcss',
+            name: '@storybook/addon-postcss',
             options: {
-                rule: {
-                    test: /\.(scss|sass)$/i,
-                },
+                postcssLoaderOptions: {
+                    implementation: require('postcss')
+                }
             },
-        },
+        }
     ],
     framework: '@storybook/react',
     core: {
