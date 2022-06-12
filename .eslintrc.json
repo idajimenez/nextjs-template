@@ -2,7 +2,7 @@
   "extends": [
     "next",
     "next/core-web-vitals",
-    "eslint:recommende"
+    "eslint:recommended"
   ],
   "globals" : {
     "React": "readonly"
