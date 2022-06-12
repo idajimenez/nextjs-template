@@ -2,6 +2,11 @@
   "name": "nextjs-template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +24,7 @@
     "@types/react-dom": "18.0.5",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
+    "sass": "^1.52.2",
     "typescript": "4.7.3"
   }
 }
